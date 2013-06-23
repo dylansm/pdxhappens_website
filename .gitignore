@@ -1,0 +1,6 @@
+wp-config.php
+config/*
+wp-content/uploads/*
+wp-content/cache/*
+wp-content/themes/origin_tweaked/style.min.css
+.sass-cache

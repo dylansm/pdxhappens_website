@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sass --watch wp-content/themes/origin_tweaked/sass/style.css.scss:wp-content/themes/origin_tweaked/style.css
