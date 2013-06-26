@@ -30,8 +30,16 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+<script type="text/javascript" src="//use.typekit.net/ues3kjd.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 <!-- WP Head -->
-<?php wp_head(); ?>
+<?php //wp_head(); ?>
+<link rel="alternate" type="application/rss+xml" title="pdxhappens &raquo; Feed" href="<?php bloginfo('template_directory') ?>/feed/" />
+<link rel='stylesheet' id='style-css'  href='<?php bloginfo('template_directory') ?>/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='origin_fancybox-stylesheet-css'  href='<?php bloginfo('template_directory') ?>/js/fancybox/jquery.fancybox-1.3.4.css?ver=1' type='text/css' media='screen' />
+<script type='text/javascript' src='<?php bloginfo('url') ?>/wp-includes/js/jquery/jquery.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?php bloginfo('url') ?>/xmlrpc.php?rsd" />
 
 <?php
   if (ENVIRONMENT=="prod") {
