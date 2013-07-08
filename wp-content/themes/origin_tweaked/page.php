@@ -32,7 +32,7 @@ get_header(); // Loads the header.php template. ?>
 						<?php echo apply_atomic_shortcode( 'entry_title', '[entry-title permalink="0"]' ); ?>
 
 						<div class="entry-content">
-							
+
 							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'origin' ) ); ?>
 							
 							<?php wp_link_pages( array( 'before' => '<p class="page-links">' . __( 'Pages:', 'origin' ), 'after' => '</p>' ) ); ?>
