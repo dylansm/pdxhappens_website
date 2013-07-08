@@ -42,8 +42,7 @@ html {
 
 body {
   margin: 0;
-  /*font: 0.8125em / 1.69231em "Bitter", Georgia, "Times New Roman", Times, serif;*/
-  font: 1em / 1.69231em "kepler-std", Georgia, "Times New Roman", serif;
+  font-family: 'Hoefler Text A', 'Hoefler Text B'; font-weight: 400; font-style: normal;
   /* 13 / 16 = 0.8125;  22 / 13 = 1.692307 */
   color: #444;
   background: #fff;
@@ -141,8 +140,7 @@ q {
 }
 
 em, cite {
-  font-style: italic;
-  font-family: "kepler-std", Georgia, "Times New Roman", serif;
+  font-family: 'Hoefler Text A', 'Hoefler Text B'; font-weight: 400; font-style: italic;
 }
 
 em em, cite cite {
@@ -154,8 +152,7 @@ dfn {
 }
 
 address {
-  font-style: italic;
-  font-family: "kepler-std", Georgia, "Times New Roman", serif;
+  font-family: 'Hoefler Text A', 'Hoefler Text B'; font-weight: 400; font-style: italic;
   margin: 0 0 1.69231em 0;
 }
 
@@ -181,11 +178,10 @@ hr {
 }
 
 ins {
-  font-family: "kepler-std", Georgia, "Times New Roman", serif;
+  font-family: 'Hoefler Text A', 'Hoefler Text B'; font-weight: 400; font-style: italic;
   background: #f5f5f5;
   color: #000;
   text-decoration: none;
-  font-style: italic;
 }
 
 mark {
@@ -538,8 +534,7 @@ dl {
     font-size: 1.230769230769231em;
     /* 16 / 13 = 1.230769230769231 */
     line-height: 1.692307em;
-    font-family: "kepler-std", Georgia, "Times New Roman", serif;
-    font-style: italic;
+    font-family: 'Hoefler Text A', 'Hoefler Text B'; font-weight: 400; font-style: italic;
     font-weight: normal;
   }
   dd {
@@ -557,8 +552,7 @@ blockquote {
   padding: 0 0 0 40px;
   font-size: 1.153846153846154em;
   /* 15 / 13 = 1.153846153846154 */
-  font-family: "kepler-std", Georgia, "Times New Roman", serif;
-  font-style: italic;
+  font-family: 'Hoefler Text A', 'Hoefler Text B'; font-weight: 400; font-style: italic;
   color: #aaa;
   background: url(images/quote.png) no-repeat 0 4px;
   blockquote blockquote {
@@ -566,8 +560,7 @@ blockquote {
     padding: 0 0 0 40px;
     font-size: 1.153846153846154em;
     /* 15 / 13 = 1.153846153846154 */
-    font-family: "kepler-std", Georgia, "Times New Roman", serif;
-    font-style: italic;
+    font-family: 'Hoefler Text A', 'Hoefler Text B'; font-weight: 400; font-style: italic;
     color: #aaa;
     background: url(images/quote.png) no-repeat 0 4px;
   }
@@ -597,7 +590,7 @@ pre {
 
 form {
   label, input, textarea {
-    font-family: "kepler-std", Georgia, "Times New Roman", serif;
+    font-family: 'Hoefler Text A', 'Hoefler Text B'; font-weight: 400; font-style: normal;
   }
   label {
     line-height: 1.5em;
@@ -914,6 +907,7 @@ a:hover img {
 #main {
   clear: both;
   width: 100%;
+  min-height: 600px;
   margin: 0 auto;
   position: relative;
 }
@@ -958,8 +952,8 @@ a:hover img {
   clear: both;
   width: 100%;
   margin: 0 auto;
-  padding: 26px 0 30px 0;
-  border-top: 5px solid #444;
+  padding: 0 0 30px 0;
+  border-top: 3px solid #555;
   font-size: 0.8461538461538462em;
   color: #aaa;
 }
@@ -968,14 +962,17 @@ a:hover img {
 -------------------------------------------------------------- */
 
 #menu-primary {
-  font-size: 1em;
+  font-family: 'Tungsten A', 'Tungsten B'; font-weight: 600; font-style: normal;
+  font-size: 1.3em;
   width: 75%;
-  margin: 30px 0 12px 0;
+  margin: 36px 0 4px 0;
   float: right;
   position: relative;
   z-index: 99;
+
   .menu {
     float: right;
+
     ul {
       float: right;
     }
@@ -984,28 +981,34 @@ a:hover img {
     display: block;
     float: left;
     min-height: 30px;
+
     a {
       line-height: 1em;
-      margin-left: 3.5em;
+      margin-left: 2.5em;
       display: block;
       text-transform: uppercase;
       font-size: 0.8461538461538462em;
     }
+
     &.current-menu-item a {
       color: #aaa;
     }
+
     li {
       clear: both;
       float: none;
       border-top: 1px dotted #e5e5e5;
+
       &.current-menu-item li {
         clear: both;
         float: none;
         border-top: 1px dotted #e5e5e5;
       }
+
       &:first-child, &.current-menu-item li:first-child {
         border-top: none;
       }
+
       a, &.current-menu-item li a {
         font-size: 1em;
         text-transform: none;
@@ -1134,6 +1137,11 @@ a:hover img {
 #header {
   clear: both;
   width: 100%;
+
+  #top {
+    height: 20px;
+    background: url('images/random_marquee.png')
+  }
 }
 
 #branding {
@@ -1148,14 +1156,19 @@ a:hover img {
   /* 30 / 13 = 2.307692307692308 */
   line-height: 1em;
   font-weight: bold;
-  margin: 0 0 20px 0;
-  /*text-transform: uppercase;*/
-  /*letter-spacing: -2px;*/
-  font-family: 'pragmatica-web-condensed', Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
   word-wrap: break-word;
   a {
-    color: #787878;
+    /*color: #787878;*/
+    color: #aaa;
     border-bottom: none;
+
+    span {
+      text-transform: uppercase;
+      color: #787878;
+      padding-right: .1em;
+    }
   }
 }
 
@@ -1165,6 +1178,7 @@ a:hover img {
 
 #site-description {
   font-size: 1.846153em;
+  font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
   /* 24 / 13 = 1.846153 */
   line-height: 1.5em;
   margin: 0;
@@ -1173,14 +1187,14 @@ a:hover img {
   float: left;
   width: 91.48936170212766%;
   clear: both;
-  text-align: center;
-  border-top: 5px solid #444;
+  border-bottom: 3px solid #555;
   padding: 18px 4.25531914893617% 20px 4.25531914893617%;
   /* 40px / 940px = 4.25531914893617% */
+  background: url('images/random_marquee.png')
 }
 
 .home #site-description {
-  border-bottom: 1px solid #e5e5e5;
+  /*border-bottom: 1px solid #e5e5e5;*/
   margin-bottom: 30px;
 }
 
@@ -1189,13 +1203,13 @@ a:hover img {
   color: #888;
   float: left;
   width: 97.872340425532%;
-  border-top: 1px solid #e5e5e5;
+  /*border-top: 1px solid #e5e5e5;*/
   border-bottom: 1px solid #e5e5e5;
   margin: 0 0 30px 0;
 }
 
 .breadcrumb-trail {
-  padding: 1px 1.086956521739%;
+  padding: 2px 1.086956521739%;
 }
 
 /* Posts 
@@ -1249,8 +1263,8 @@ a:hover img {
   .entry-title {
     margin: 0 0 0.6em 0;
     padding: 0;
-    font-family: 'pragmatica-web-condensed', Helvetica, Arial, sans-serif;
-    font-size: 1.430769230769231em;
+    font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
+    font-size: 1.630769230769231em;
     /* 16 / 13 = 1.230769230769231 */
     /*text-transform: uppercase;*/
     line-height: 1.3em;
@@ -1292,10 +1306,10 @@ a:hover img {
 -------------------------------------------------------------- */
 
 .byline {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  /*font-family: Georgia, 'Times New Roman', Times, serif;*/
   font-style: italic;
   margin: 0 0 1em 0;
-  font-size: 0.8461538461538462em;
+  font-size: 0.8em;
   color: #aaa;
   line-height: 1.692307em;
   word-spacing: 2px;
@@ -1658,8 +1672,14 @@ a:hover img {
 -------------------------------------------------------------- */
 
 #footer {
+  background: url('images/random_marquee.png');
+  /*padding-top: 1em;*/
+
   p {
+    font-family: 'Tungsten A', 'Tungsten B'; font-weight: 500; font-style: normal;
+    background: #fff;
     margin-bottom: 0;
+    padding: .5em 0;
   }
   a {
     color: #888;
@@ -1758,7 +1778,7 @@ a:hover img {
     color: #aaa !important;
   }
   .description, .gfield_description, .gsection_description, .instruction, div.charleft {
-    font-family: 'Bitter', Georgia, 'Times New Roman', Times, serif !important;
+    /*font-family: 'Bitter', Georgia, 'Times New Roman', Times, serif !important;*/
   }
 }
 
